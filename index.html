@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sofie Schousboe, a multimedia design student with a passion for web design and development.">
+    <meta name="author" content="Sofie Schousboe">
+    <link rel="shortcut icon" type="image/png" href="img/logo/fav_icon.png" />
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Sofie Schousboe</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header>
+            <img src="img/logo/logo.png" alt="Logo"> <!-- HOME BUTTON -->
+
+            <input id="burger" type="checkbox">
+
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <nav>   <!-- THIS EXPANDS FOREVER   -->
+                <ul>
+                    <li><a href="#is">Is</a></li> <!-- THIS SPECIFIC TAG BEHAVES WEIRDLY -->
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>  
+            </nav>
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <div class="frontpageContainer">
+            <div class="filter"></div>
+            
+            <h1>Sofie Schousboe</h1> <!-- ALIGN PROPERLY! -->
+            <h2 class="borderBox">Frontend developer with a passion for creativity</h2>
+        </div>
+
+        <main> <!-- MAKE FLEXBOX, FLEX ROW, WRAP -->
+            <h2>IS</h2> <!-- WHO SECTION -->
+            <section id="is" class="isSection borderBox">
+                <h3>Hey there! I'm <span class="highlight">Sofie</span></h3>
+                <div class="isSectionFlex">                       
+                    <p>Nice to meet you!
+                        <br><br>
+                        I'm a 23-year-old geek studying <span class="highlight"> Multimedia Design </span> and loving it.
+                    </p>
+                    <div class="imgContainer"><img src="img/me.png" alt="Portait of me"></div>
+                </div>
+                
+            </section>
+
+            <h2>WORK</h2> <!-- WHAT SECTION-->
+            <section id="work" class="workSection borderBox">
+                <h3>Projects</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex laboriosam tenetur dolores! Unde odio expedita, similique fugiat ipsa repellat facere porro molestias saepe consequatur, minus sunt quisquam veritatis ipsam? Numquam.</p>
+                <h3>Volunteer</h3>
+            </section>
+
+            <h2>ABOUT</h2> <!-- HOW SECTION-->
+            <section id="about" class="aboutSection borderBox">
+                <h3>Skills</h3>
+                <div class="skillsContainer">
+                    <p>I have a few skills in my bag, but I'm always on the hunt for more...</p>
+                    <br>
+                    <p>I'm proficient in <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">SEO</span>, <span class="highlight">Danish</span>, <span class="highlight">English</span>, and <span class="highlight">creativity</span>.</p>
+                    <br>
+                    <p>I'm experienced in <span class="highlight">adaptability</span>, <span class="highlight">teamwork</span>, <span class="highlight">Vanilla JavaScript</span>, <span class="highlight">Adobe XD</span> and <span class="highlight">Microsoft Office</span>.</p>
+                    <br>
+                    <p>I know a bit about <span class="highlight">Photoshop</span>, <span class="highlight">After Effects</span>, <span class="highlight">Illustrator</span>, and <span class="highlight">creativity</span>.</p>
+                    <br>
+                    <p>But above all else, I possess a <span class="highlight">willingness to learn</span>.</p>
+                </div>
+
+                <h3>Journey of finding a passion</h3>
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <div>
+                                <time>1998</time>
+                                Google is born!
+                                <br><br>
+                                And I was also born this year.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>2012</time>
+                                I took my first baby steps into the world of programming and social media when I made a tumblr blog for a show I really liked.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>2013</time>
+                                I was lucky enough to be able to participate in an exclusive writer's course. Which means I learnt a lot, wrote a short story, and now I'm a published author.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>2015</time>
+                                It happened again!
+                                <br>
+                                While playing handball at the Oure Sport & Performing Arts boarding school, I ended up with another published work!
+                                <br><br>
+                                I was also convinced I wanted to be a veterinarian. Or a film director.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>2018</time>
+                                I graduated Aarhus Statsgymnasium after three years of biochemistry and creative burnout.
+                                <br><br>
+                                So now I knew I <i>didn't</i> want to be a veterinarian.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>2018</time>
+                                My gap year. I was reunited with my creativity during a roadtrip on the Westcoast of USA.
+                                <br><br>
+                                I took a film director course, tried to learn what Python is but decided I should start by learning what programming actually is first.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>2020</time>
+                                Did I mention, I'm a bit of a geek? My friend and I hosted an online global event with over 40 participants for a fandom, and I had the responibility of design, SoMe, and blog maintanence. 
+                                <br><br>
+                                It was the point of no return; I had tip-toed the edge before, but now I was plummeting down the web design rabbit hole.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>2020</time>
+                                It got me! I started as a Multimedia Design student at Aarhus Business Academy, so I could expand my knowledge of design, learn more about programming, and last, but definitely not least, challenge my creativity.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>2022</time>
+                                I will graduate with a big smile! :D
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2>CONTACT</h2> <!-- WHEN SECTION-->
+            <section id="contact" class="contactSection borderBox">
+                <p>If you want to have a chat, feel free to contact me at:</p>
+                <a href="mailto:sofie.sjogaard@gmail.com" target="_blank">sofie.sjogaard@gmail.com</a>
+                <div class="soMeContainer">
+                    <p>I can also be found in a few other places on the internet:</p>
+                    <div class="soMeFlex">
+                        <a href="https://www.linkedin.com/in/sofie-schousboe-sjogaard/"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://github.com/sofieschousboe"><img src="img/github.png" alt="Github"></a>
+                        <a href="https://www.instagram.com/sofieschousboe/"><img src="img/instagram.png" alt="Instagram"></a> 
+                    </div>
+                </div>
+            </section>
+
+            <!-- QUOTE -->
+            <div class="quoteContainer">
+                <img src="img/quotes2.png" alt="Quotation marks"> <!-- COULD ANIMATE ROTATE ON SCROLL -->
+                <div class="quoteBox borderBox">
+                    <p><i>A dancer dies twice—once when they stop dancing, and this first death is the more painful.</i></p>
+                    <p class="martha highlight">Martha Graham</p>
+                </div>
+            </div>
+
+            <!-- LOGO -->
+            <img class="logoBottom" src="img/logo/logo_ring.png" alt="Logo">
+            <div class="copyright">&#169; Sofie Schousboe Sjøgaard</div>
+        </main>
+    </div>
+    
+    <!-- SCRIPTS -->
+    <script src="js/about.js"></script>
+</body>
+</html>

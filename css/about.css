@@ -1,0 +1,141 @@
+/*Timeline SECTION*/
+.timeline ul {
+  padding: 50px 0;
+  overflow-x: hidden;
+}
+
+.timeline li {
+  position: relative;
+  width: 2px;
+  padding-top: 30px;
+  margin: 0 auto;
+  background: #136772;
+  list-style-type: none;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.timeline div {
+  position: relative;
+  width: 300px;
+  padding: 10px;
+  background-color: #b889b2;
+  color: #f3f3f3;
+}
+
+.timeline li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline li:nth-child(even) div {
+  left: -345px;
+}
+
+.timeline time {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f3f3f3;
+}
+
+
+.timeline div::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  bottom: 7px;
+}
+
+.timeline li:nth-child(odd) div::after {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #b889b2 transparent transparent;
+}
+
+.timeline li:nth-child(even) div::after {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #b889b2;
+}
+
+/*ANIMATION EFFECTS*/
+
+.timeline li::before {
+  transition: background ease-in .8s;
+}
+
+.timeline div {
+  transition: all ease-in-out .8s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.timeline li:nth-child(odd) div {
+  transform: translateX(200px);
+}
+
+.timeline li:nth-child(even) div {
+  transform: translateX(-200px);
+}
+
+.timeline li.in-view::before {
+  background: #b889b2; 
+}
+
+.timeline li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+  .timeline div {
+    width: 200px;
+  }
+  .timeline li:nth-child(even) div {
+    left: -245px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   
+  .timeline ul li {
+    margin: 0 10px;
+  }
+  
+  .timeline li div {
+    width: calc(100vw - 210px);
+  }
+
+  .timeline li:nth-child(even) div {
+    left: 45px;
+  }
+  
+  .timeline li:nth-child(even) div::after {
+    right: calc(100vw - 210px);
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #b889b2 transparent transparent;
+  }
+}
+
+@media screen and (max-width: 540px) {
+   
+    .timeline li div {
+      width: calc(100vw - 180px);
+    }
+
+    .timeline li:nth-child(even) div::after {
+        right: calc(100vw - 180px);
+    }
+  }
